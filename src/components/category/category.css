@@ -1,0 +1,9 @@
+.cat-image {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.cat-text {
+    font-size: 12px;
+}

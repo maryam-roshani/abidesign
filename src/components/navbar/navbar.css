@@ -1,0 +1,68 @@
+.navlist:hover {
+    color: red !important;
+}
+
+.navlist img:hover {
+    color: red !important;
+}
+
+.navlist:hover .navitem1 {
+    visibility: hidden;
+}
+
+.navitem2 {
+    visibility: hidden;
+}
+
+.navlist:hover .navitem2 {
+    visibility: visible !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
+}
+
+
+/* styles.css */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

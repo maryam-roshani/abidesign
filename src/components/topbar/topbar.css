@@ -1,0 +1,7 @@
+.search {
+    background: url(../../assets/search.svg) no-repeat scroll 7px 11px;
+    float: right !important;
+}
+input:focus{
+    outline: none;
+}

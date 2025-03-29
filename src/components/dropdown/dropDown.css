@@ -1,0 +1,22 @@
+.dropdown-toggle:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.list{
+    text-align: right;
+}
+
+.place{
+    position: absolute !important;
+    right: 0 !important;
+}
+
+.pile{
+    cursor: pointer;
+}
+
+.pile:hover{
+    font-weight: 600 !important;
+    margin-right: 10px;
+}
