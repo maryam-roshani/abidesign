@@ -7,11 +7,11 @@ import bag from '../../assets/bag.svg'
 const Topbar = () => {
   return (
     <div className=''>
-        <div className='h-15 flex justify-between shadow-sm w-full px-32 py-2 bg-stone-400'>
-            <div className="nav-logo flex items-center gap-2">
-                <Link to='/' className='no-underline my-auto'><h4 >آبی استودیو</h4></Link>
+        <div className='h-15 block lg:flex lg:justify-between shadow-sm w-full lg:px-32 lg:py-2 bg-stone-400'>
+            <div className="nav-logo flex items-center justify-center p-2 lg:p-3">
+                <Link to='/' className='no-underline my-auto text-base font-bold lg:text-lg'><h4 >آبی استودیو</h4></Link>
             </div>
-            <div className='flex p-2 rounded-md bg-stone-100 gap-1 w-1/3 '>
+            <div className='flex lg:p-2 rounded-sm md:rounded-md bg-stone-100 gap-1 lg:w-1/3 w-full'>
                 <div className="text-gray-600 my-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -19,7 +19,7 @@ const Topbar = () => {
                 </div>
                 <input type="text" placeholder="جستجوی محصول..." className='text-sm rounded-3 border-0 bg-stone-100 p-2 grow text-gray-600'/>
             </div>
-            <div className='flex gap-0.5'>
+            <div className='flex gap-0.5 justify-between mx-1'>
                 <div className="flex items-center gap-3">
                     <Link to='/login'>
                         <button className='h-9 px-2 border-0 rounded-md items-center flex text-center bg-stone-500 my-auto'>

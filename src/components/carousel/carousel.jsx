@@ -32,17 +32,21 @@ const Carousel = () => {
     }
 
   return (
-    <div className='container-slider my-4 mx-15 relative overflow-hidden rounded-lg'>
-        {carouselData.map((obj, index) => {
-            return (
-                <div
-                key={index}
-                className={slideIndex === index + 1 ? 'slide w-full h-full absolute active-anim' : 'slide w-full h-full absolute opacity-0' }
-                >
-                    <img src={obj.image} alt="" className='w-full h-full object-cover'/>
-                </div>
-            )
-        })}
+    <div className='mx-auto relative my-2 lg:my-4 max-w-[1200px] w-full'>
+        <div className="relative pt-[32.65%] w-full overflow-hidden rounded-lg">
+            {carouselData.map((obj, index) => {
+                return (
+                    <div
+                        key={index}
+                        className={`absolute top-0 left-0 w-full h-full transition-opacity duration-500 ${
+                        slideIndex === index + 1 ? 'opacity-100 z-10' : 'opacity-0 z-0'
+                        }`}
+                    >
+                        <img src={obj.image} alt="" className='w-full h-full object-cover rounded-lg'/>
+                    </div>
+                )
+            })}
+        </div>
         <BtnCarousel moveSlide={nextSlide} direction={"next"} />
         <BtnCarousel moveSlide={prevSlide} direction={"prev"} />
 
